@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo-List</title>
+</head>
+<body>
+    <div class="main">
+        <div class="form-st">
+            <div>
+                <p>Enter Your Name:</p>
+                <input type="text" id="name" placeholder="Your name">
+            </div>
+            <div>
+                <p>Enter Your Age:</p>
+                <input type="text" id="age" placeholder="Your age">
+            </div>
+            <div>
+                <p>Choose Your Gender:</p>
+                <div class="gender-section">
+                    <div>
+                        <input name="Gender" value="Male" id="male" type="radio"> Male
+                    </div>
+                    <div>
+                        <input name="Gender" value="Female" id="female" type="radio"> Female
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Enter Your Course:</p>
+                <input type="text" id="course" placeholder="Your course">
+            </div>
+            <div>
+                <p>Enter Your Phone No:</p>
+                <input type="text" id="phoneno" placeholder="Your phone number">
+            </div>
+            <div>
+                <p>Enter Your Email:</p>
+                <input type="email" id="email" placeholder="Your email">
+            </div>
+            <button onclick="update()">Save Details</button>
+        </div>
+        <div>
+            <table class="table" id="tablelist">
+                <tr class="tr1">
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Phone No</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

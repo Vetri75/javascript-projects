@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+input,
+input::placeholder{
+    font-size: 12px;
+}
+input[type="text"] {
+    font-size:12px;
+}
+input[type="email"] {
+    font-size:12px;
+}
+.main {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-st {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input {
+    border: 1px solid black;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.gender-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; 
+}
+.tr1 {
+    background-color: rgb(215, 151, 68);
+}
+.tr1 th {
+    padding: 12px;
+    text-align: left;
+    font-size: 12px;
+}
+.tr2 {
+    background-color: bisque;
+}
+.tr2 td {
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    word-wrap: break-word; 
+}
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .main {
+        width: 100%;
+    }
+    .gender-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+    .table {
+        display: block; 
+        overflow-x: auto;
+        width: 100%;
+    }
+    .table th, .table td {
+        font-size: 14px;
+        white-space: nowrap; 
+    }
+}
+
+@media (max-width: 480px) {
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .form-st p {
+        font-size: 14px;
+    }
+    .gender-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    button {
+        padding: 12px;
+        font-size: 16px;
+    }
+    .tr1 th, .tr2 td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main {
+        padding: 15px;
+    }
+    .form-st p {
+        font-size: 12px;
+    }
+    input {
+        font-size: 12px;
+        padding: 7px;
+    }
+    .tr1 th, .tr2 td {
+        font-size: 11px;
+        padding: 6px;
+    }
+    button {
+        font-size: 14px;
+    }
+}
