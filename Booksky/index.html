@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+    <title>BOOKSKY</title>
+</head>
+
+<body>
+    <!-- Nav Section Start -->
+    <nav>
+        <h1>BOOKSKY</h1>
+    </nav>
+    <!-- Nav Section End -->
+
+    <!-- Books Display Section Start -->
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich dad Poor Dad</h2>
+            <h3>Robert Kiyosaki</h3>
+            <p>The book provides a guide to financial literacy and teaches readers about the importance of financial education, creating wealth, and achieving financial freedom.</p>
+            <button onclick="deletee(event)">Delete</button>
+        </div>
+    </div>
+    <!-- Books Display Section End -->
+
+
+    <button class="add-button" id="addpopupbutton">+</button>
+
+    
+    <!-- Overlay Section Start -->
+    <div class="Overlay"></div>
+    <div class="poupbox">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="booktitle">
+            <input type="text" placeholder="Book Author" id="bookauthor">
+            <textarea placeholder="Short Description" id="bookdescription"></textarea>
+            <button id="addbook">Add Book</button>
+            <button id="Cancel">Cancel</button>
+        </form>
+    </div>
+    <!-- Overlay Section End -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
