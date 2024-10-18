@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="style.css">
     <title>ToDo-List</title>
 </head>
-<body>
+<body onload="loadFromLocalStorage()">
     <div class="main">
+        <h2>Personal Details To-Do List</h2>
+
         <div class="form-st">
             <div>
                 <p>Enter Your Name:</p>
@@ -42,6 +44,12 @@
             </div>
             <button onclick="update()">Save Details</button>
         </div>
+
+        <div class="search-section">
+            <p>Search:</p>
+            <input type="text" id="search" placeholder="Search by Name or Course" onkeyup="searchTable()">
+        </div>
+
         <div>
             <table class="table" id="tablelist">
                 <tr class="tr1">
@@ -55,7 +63,10 @@
                 </tr>
             </table>
         </div>
+
+        <button onclick="exportTableToCSV()">Export to CSV</button>
     </div>
+
     <script src="main.js"></script>
 </body>
 </html>
